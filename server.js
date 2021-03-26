@@ -1,14 +1,14 @@
 //console.log('Voila du code javascript!');
 
 /* Nous allons impoter le server http de Node et y repondre*/
-//importation du package http
+//Importation du package http
 const http = require ('http');
 
-// creation de l'objet server par l'objet http ci-haut importé
-/*prendra2 arguments requete et reponse qui demande du server
+// Creation de l'objet server par l'objet http ci-haut importé
+/*Prendra2 arguments requete et reponse qui demande du server
 renverra la fonction ci-dessous */
 
-// on va ici, impoter notre apps depuis app.js
+// On va ici, impoter notre apps depuis app.js
 const app = require ('./app');
 
 const normalizePort = val => {
@@ -62,13 +62,13 @@ server.on('listening', () =>{
 server.listen(port);
 
 /*
-// passons notre app à un port
+// Passons notre app à un port
 app.set('port', process.env.PORT || 3000);
 
-// on passera notre app au server
+// On passera notre app au server
 const server = http.createServer(app);
 
-/* puis le seveur devra ecouter, attendre les requetes envoyer 
+/* Puis le seveur devra ecouter, attendre les requetes envoyer 
 par défault en developpement on use le port 3000 si libre
 sinon on use*/
 
@@ -76,11 +76,13 @@ sinon on use*/
 server.listen(process.env.PORT || 3000);
 */
 
-/* -    la fonction normalizePort renvoie un port valide,qu'il soit fourni sous la 
+/* -    La fonction normalizePort renvoie un port valide,qu'il soit fourni sous la 
 forme d'une numero ou d'une chaine,
--   la fonction errorHandler recherche les differentes erreurset les gère de manière approprié
+
+-   La fonction errorHandler recherche les differentes erreurset les gère de manière approprié
 Ell est ensuite enregistrer dans le serveur,
--   un ecouteur d'evenement est également enregistrer,consigant le port ou le canal
+
+-   Un ecouteur d'evenement est également enregistrer,consigant le port ou le canal
 nommé sur lequel le serveur s'éxécute dans la console.
 */
 // mongodb+srv://jimbob:<PASSWORD>@cluster0-pme76.mongodb.net/test?retryWrites=true&w=majority
